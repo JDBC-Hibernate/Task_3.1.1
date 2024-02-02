@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<br>
+<br>
+<a href="/">Home</a> | <a href="/add">Add User</a> | <a href="/update">Update User</a>
+| <a href="/delete">Delete User</a>
+<br>
+<br>
+<h2>User List</h2>
+<div>
+    <th:block th:each="user : ${users}">
+        <h4 th:text="${user.toString()}"></h4>
+    </th:block>
+</div>
+
+
+
+</body>
+</html>
